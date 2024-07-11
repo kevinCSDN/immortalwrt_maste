@@ -20,7 +20,11 @@
 #sed -i 's/PATCHVER:=5.15/PATCHVER:=6.6/g' target/linux/x86/Makefile   # x86机型,默认内核5.10，修改内核为5.15
 #sed -i '$ a uci set uhttpd.main.redirect_https='\''0'\''' package/lean/default-settings/files/zzz-default-settings
 #sed -i '$ a uci commit uhttpd' package/lean/default-settings/files/zzz-default-settings
+# 修改默认主题
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
+# 修改主机名
+sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 #替换为新版本golang
 #rm -rf feeds/packages/lang/golang
 #git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
