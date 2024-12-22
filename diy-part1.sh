@@ -76,11 +76,11 @@ sed -i '$a src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main' 
 #删除feeds自带mosdns、v2ray-geodata
 
 
-#cd package
+cd package
 #git clone https://github.com/f8q8/luci-app-autoreboot.git
-#git clone -b js https://github.com/sirpdboy/luci-theme-kucat.git
-#git clone -b main https://github.com/sirpdboy/luci-app-advancedplus.git
-#cd ..
+git clone -b js https://github.com/sirpdboy/luci-theme-kucat.git
+git clone -b main https://github.com/sirpdboy/luci-app-advancedplus.git
+cd ..
 
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 #git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
